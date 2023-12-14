@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import ABOUT_ME_IMG from "../../../public/images/aboutme.jpg";
+import ABOUT_ME_IMG from "/public/images/aboutme.jpg";
 import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
 import aboutMeData from "../constants/aboutmeData";
