@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
-import navigationLinks from "../constants/navigationLinks"
+import navigationLinks from "../constants/navigationLinks";
 import BURGER_ICON from "../../../public/images/burger.svg";
 import X_ICON from "../../../public/images/x.svg";
 import MobileMenu from "./MobileMenu";
@@ -11,7 +11,7 @@ import MobileMenu from "./MobileMenu";
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-20 bg-[#121212]">
+		<nav className="fixed mx-auto border-b border-[#33353F] top-0 left-0 right-0 z-20 bg-[#121212]">
 			<div className="flex flex-wrap items-center justify-between mx-auto p-4">
 				<Link
 					href={"/"}
@@ -25,7 +25,11 @@ const Navbar = () => {
 						</button>
 					) : (
 						<button onClick={() => setNavbarOpen(true)} className="p-4">
-							<Image src={BURGER_ICON} alt="open navigation" className="h-7 w-7" />
+							<Image
+								src={BURGER_ICON}
+								alt="open navigation"
+								className="h-7 w-7"
+							/>
 						</button>
 					)}
 				</div>
@@ -41,7 +45,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
-            {navbarOpen && <MobileMenu />}
+			{navbarOpen && <MobileMenu />}
 		</nav>
 	);
 };
