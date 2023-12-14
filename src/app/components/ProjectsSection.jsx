@@ -32,20 +32,25 @@ const ProjectsSection = () => {
 					);
 				})}
 			</div>
-			<div className="grid md:grid-cols-3 gap-8 md:gap-12 mt-2">
-				{filteredProject.map((project) => {
-					return (
-						<ProjectCard
-							key={project.id}
-							title={project.title}
-							description={project.description}
-							imgUrl={project.image}
-							githubUrl={project.githubUrl}
-							previewUrl={project.previewUrl}
-						/>
-					);
-				})}
-			</div>
+
+			{filteredProject.length === 0 ? (
+				<p className="mt-4">There are no projects yet...</p>
+			) : (
+				<div className="grid md:grid-cols-3 gap-8 md:gap-12 mt-2">
+					{filteredProject.map((project) => {
+						return (
+							<ProjectCard
+								key={project.id}
+								title={project.title}
+								description={project.description}
+								imgUrl={project.image}
+								githubUrl={project.githubUrl}
+								previewUrl={project.previewUrl}
+							/>
+						);
+					})}
+				</div>
+			)}
 		</section>
 	);
 };
