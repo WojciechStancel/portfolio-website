@@ -61,7 +61,6 @@ const HeroSection = () => {
 					<div className="rounded-full bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px] relative">
 						<Image
 							src={MY_IMAGE}
-							priority
 							alt="hero image"
 							width={300}
 							height={300}
