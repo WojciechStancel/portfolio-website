@@ -3,12 +3,17 @@
 import Image from "next/image";
 import MY_IMAGE from "../../../public/images/AvatarMaker.png";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
 	return (
 		<section className="lg:py-16">
 			<div className="grid grid-cols-1 lg:grid-cols-12">
-				<div className="col-span-7 place-self-center text-center sm:text-left">
+				<motion.div
+					initial={{ opacity: 0, scale: 0.5 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.5 }}
+					className="col-span-7 place-self-center text-center sm:text-left">
 					<h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold">
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-sky-800">
 							Hello, I'm{" "}
@@ -47,8 +52,12 @@ const HeroSection = () => {
 							</span>
 						</button>
 					</div>
-				</div>
-				<div className="col-span-5 place-self-center mt-5 lg:mt-0">
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, scale: 0.5 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.5 }}
+					className="col-span-5 place-self-center mt-5 lg:mt-0">
 					<div className="rounded-full bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px] relative">
 						<Image
 							src={MY_IMAGE}
@@ -58,7 +67,7 @@ const HeroSection = () => {
 							className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 						/>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

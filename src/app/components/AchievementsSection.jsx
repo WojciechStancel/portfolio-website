@@ -1,17 +1,29 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
+const AnimatedNumbers = dynamic(
+	() => {
+		return import("react-animated-numbers");
+	},
+	{ ssr: false }
+);
+
 const achievementsList = [
 	{
 		name: "Projects",
-		count: "10+",
+		count: "100",
+		postfix: "+",
 	},
 	{
 		name: "Hours",
-		count: "2800+",
+		count: "2000",
+		postfix: "+",
 	},
 	{
 		name: "Contributions",
-		count: "430+",
+		count: "430",
+		postfix: "+",
 	},
 ];
 
@@ -24,7 +36,18 @@ const AchievementsSection = () => {
 						<div
 							key={index}
 							className="flex flex-col items-center justify-center mx-4">
-							<h2 className="text-white text-4xl font-bold">{a.count}</h2>
+							<h2 className="text-white text-4xl font-bold flex ">
+								<AnimatedNumbers
+									includeComma
+									animateToNumber={parseInt(a.count)}
+									locale="en-US"
+									transitions={(index) => ({
+										type: "spring",
+										duration: index + 1,
+									})}
+								/>
+								{a.postfix}
+							</h2>
 							<p className="text-[#ADB7BE] text-base">{a.name}</p>
 						</div>
 					);
