@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import MY_IMAGE from "/public/images/avatar_maker.png";
+import MY_IMAGE from "../../../public/images/avatar_maker.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
