@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import ABOUT_ME_IMG from "../../../public/images/cr8.jpg";
 import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
+import ABOUT_ME_IMG from "../../../public/images/notes_app.png";
 import aboutMeData from "../constants/aboutmeData";
+import Image from "next/image";
 const AboutMeSection = () => {
 	const [tab, setTab] = useState("skills");
 	const [isPending, startTransition] = useTransition();
