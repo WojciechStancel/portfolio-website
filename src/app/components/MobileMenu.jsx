@@ -1,4 +1,4 @@
-import navigationLinks from "../constants/navigationLinks";
+import {navigationLinks} from "./Navbar";
 import NavLink from "./NavLink";
 
 const MobileMenu = () => {

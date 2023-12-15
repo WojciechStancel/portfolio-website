@@ -3,11 +3,25 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
-import navigationLinks from "../constants/navigationLinks";
 import BURGER_ICON from "../../../public/images/burger.svg";
 import X_ICON from "../../../public/images/x.svg";
 import LOGO from "../../../public/images/Logo.png";
 import MobileMenu from "./MobileMenu";
+
+export const navigationLinks = [
+	{
+		title: "About",
+		path: "#about",
+	},
+	{
+		title: "Projects",
+		path: "#projects",
+	},
+	{
+		title: "Contact",
+		path: "#contact",
+	},
+];
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);

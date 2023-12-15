@@ -4,8 +4,30 @@ import { useState, useRef } from "react";
 import projectsData from "../constants/projectsData";
 import ProjectCard from "./ProjectCard";
 import CategoryButton from "./CategoryButton";
-import projectsCategories from "../constants/projectsCategories";
 import { motion, useInView } from "framer-motion";
+
+const projectsCategories = [
+	{
+		id: 1,
+		name: "All",
+	},
+	{
+		id: 2,
+		name: "React",
+	},
+	{
+		id: 3,
+		name: "Frontend",
+	},
+	{
+		id: 4,
+		name: "Wordpress",
+	},
+	{
+		id: 5,
+		name: "Python",
+	},
+];
 
 const ProjectsSection = () => {
 	const [tag, setTag] = useState("All");
