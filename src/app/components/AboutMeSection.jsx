@@ -20,6 +20,7 @@ const AboutMeSection = () => {
 			<div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 				<Image
 					src={ABOUT_ME_IMG}
+					priority
 					alt="laptop with programming tools"
 					width={600}
 					height={400}
@@ -28,10 +29,14 @@ const AboutMeSection = () => {
 				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
 					<h2 className="text-4xl font-bold mb-4">About Me</h2>
 					<p className="text-base md:text-lg">
-						Hi, I am Wojtek - frontend developer with aspiration to fullstack programmer from Poland. I am currently in the process of learning the
-						React framework. <br />
+						Hi, I am Wojtek - frontend developer with aspiration to fullstack
+						programmer from Poland. I am currently in the process of learning
+						the React framework. <br />
 						<br />
-						In addition to the frontend, I am also familiar with the workings of the backend. I have spent a lot of time to expand my knowledge of backend technologies such as Django, Databases and Django Rest Framework.
+						In addition to the frontend, I am also familiar with the workings of
+						the backend. I have spent a lot of time to expand my knowledge of
+						backend technologies such as Django, Databases and Django Rest
+						Framework.
 					</p>
 
 					<div className="flex flex-row mt-7">
