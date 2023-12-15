@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import MY_IMAGE from "../../../public/images/avatar.png";
+import MY_IMAGE from "../../../public/images/avatar1.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
 							repeat={Infinity}
 						/>
 					</h1>
-					<p className="text-[#ADB7BE] text-base  sm:text-lg lg:text-xl">
+					<p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl px-2">
 					Coding is not just about commands and algorithms - it's about expressing yourself in the language of machines to create something meaningful and impactful.
 					</p>
 					<div className="mt-5">
@@ -67,12 +67,13 @@ const HeroSection = () => {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.5 }}
 					className="col-span-5 place-self-center mt-5 lg:mt-0">
-					<div className="rounded-full bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px] relative">
+					<div className="rounded-full bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px] relative shadow-md shadow-slate-500">
 						<Image
 							src={MY_IMAGE}
 							alt="hero image"
-							width={300}
-							height={300}
+							width={400}
+							height={400}
+							priority
 							className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 						/>
 					</div>

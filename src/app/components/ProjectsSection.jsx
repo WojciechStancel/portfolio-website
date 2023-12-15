@@ -42,7 +42,10 @@ const ProjectsSection = () => {
 			</div>
 
 			{filteredProject.length === 0 ? (
-				<p className="mt-4">There are no projects yet...</p>
+				<div className="text-xl">
+					<p className="mt-4">There are no projects yet.</p>
+					<p>But they are in progress...</p>
+				</div>
 			) : (
 				<ul className="grid md:grid-cols-3 gap-8 md:gap-12 mt-2">
 					{filteredProject.map((project, index) => {

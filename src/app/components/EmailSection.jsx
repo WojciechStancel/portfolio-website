@@ -77,7 +77,7 @@ const EmailSection = () => {
 						type="email"
 						id="email"
 						required
-						placeholder="your-email@example.com"
+						placeholder="Enter your email address."
 						className="bg-[#ADB7BE] border border-primary-400 placeholder-[#0d0d0dc5] text-[#0b0b0b] text-sm rounded-lg block w-full p-2.5"
 					/>
 					<label
@@ -90,7 +90,7 @@ const EmailSection = () => {
 						type="text"
 						id="subject"
 						required
-						placeholder="Write a subject"
+						placeholder="Just say hi!"
 						className="bg-[#ADB7BE] border border-primary-400 placeholder-[#0d0d0dc5] text-[#0b0b0b] text-sm rounded-lg block w-full p-2.5"
 					/>
 					<div className="mb-6">
@@ -102,7 +102,7 @@ const EmailSection = () => {
 						<textarea
 							name="message"
 							id="message"
-							placeholder="Write a message"
+							placeholder="Write a message."
 							className="bg-[#ADB7BE] border border-primary-400 placeholder-[#0d0d0dc5] text-[#0b0b0b] text-sm rounded-lg block w-full p-2.5"
 						/>
 					</div>

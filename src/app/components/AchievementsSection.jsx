@@ -29,13 +29,13 @@ const achievementsList = [
 
 const AchievementsSection = () => {
 	return (
-		<div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+		<div className="py-8 px-4 xl:gap-16 sm:py-16 ">
 			<div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
 				{achievementsList.map((a, index) => {
 					return (
 						<div
 							key={index}
-							className="flex flex-col items-center justify-center mx-4">
+							className="flex flex-col items-center justify-center mx-4 my-1">
 							<h2 className="text-white text-4xl font-bold flex ">
 								<AnimatedNumbers
 									includeComma

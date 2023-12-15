@@ -56,7 +56,7 @@ const AboutMeSection = () => {
 							Experience
 						</TabButton>
 					</div>
-					<div className="mt-7">
+					<div className="mt-6">
 						{aboutMeData.find((about) => about.id === tab).content}
 					</div>
 				</div>
