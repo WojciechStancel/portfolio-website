@@ -1,48 +1,57 @@
 const projectData = [
 	{
-		id: 1,
 		title: "React E-Shop",
-		description: "Project 1 desc",
-		image: "/images/notes_app.png",
+		description:
+			"This is main project created during the course - Zrozumieć React. It is a Polish course that has been created by fantastic people - Filip and Kacper. The e-commerce project helped me understand a lot of React features and prepared me to build my own bigger applications. All data is stored in back-end folder.",
+		image: "/images/e-shop.png",
 		tag: ["All", "React"],
-		githubUrl: "/",
+		githubUrl: "https://github.com/WojciechStancel/e-shop",
 		previewUrl: "/",
 	},
 	{
-		id: 2,
 		title: "Notes App",
-		description: "Project 2 desc",
+		description:
+			"Notes App is a simple application that lets you write down the things that are important to you. App is connected with Firebase Database - for now there is no authorization option. You can enjoy a personalized experience with the ability to switch between light and dark themes.",
 		image: "/images/notes_app.png",
 		tag: ["All", "React"],
-		githubUrl: "/",
-		previewUrl: "/",
+		githubUrl: "https://github.com/WojciechStancel/Notes-React-App",
+		previewUrl: "https://your-notes-react-app.netlify.app/",
 	},
 	{
-		id: 3,
 		title: "Real Estate",
-		description: "Project 3 desc",
+		description:
+			"This application is built using Django for the backend and Bootstrap for the frontend. It serves as a platform for managing real estate listings, allowing users to browse and add property listings, as well as providing authentication and registration features. The application utilizes a PostgreSQL database, and it is hosted on AWS with Nginx as the web server.",
 		image: "/images/real_estate.png",
 		tag: ["All", "Python"],
-		githubUrl: "/",
-		previewUrl: "/",
+		githubUrl: "https://github.com/WojciechStancel/Real-Estate",
+		previewUrl: "http://51.20.211.102/",
 	},
 	{
-		id: 4,
 		title: "Photo Story",
-		description: "Project 4 desc",
+		description:
+			"This project is a responsive photography portfolio website. It's designed to showcase the work of a photographer and is built using HTML, SCSS, and JavaScript. Gulp is used for streamlining the development workflow. You can view the live website on GitHub Pages.",
 		image: "/images/photo_story_collection.png",
 		tag: ["All", "Frontend"],
-		githubUrl: "/",
-		previewUrl: "/",
+		githubUrl: "https://github.com/WojciechStancel/FotoStory",
+		previewUrl: "https://wojciechstancel.github.io/FotoStory",
 	},
 	{
-		id: 5,
 		title: "CodeCr8ive",
-		description: "Project 5 desc",
+		description:
+			"This website showcases my work and provides information about me. It's a project built with HTML, SASS, and JavaScript, and I've used Gulp to streamline the development and build process. Website is deployed on Hostinger",
 		image: "/images/cr8.png",
 		tag: ["All", "Frontend"],
-		githubUrl: "/",
-		previewUrl: "/",
+		githubUrl: "https://github.com/WojciechStancel/CodeCr8ive",
+		previewUrl: "https://codecr8ive.pl/",
+	},
+	{
+		title: "Flower Shop",
+		description:
+			"Flower Shop Website This project is a website for a small flower shop 🌻 It's built using HTML, SCSS, and JavaScript, and Gulp is used to enhance development efficiency. The website is designed to promote small flower shop and provide information about the main products and services offered.",
+		image: "/images/flower_shop.png",
+		tag: ["All", "Frontend"],
+		githubUrl: "https://github.com/WojciechStancel/FlowerShop",
+		previewUrl: "https://wojciechstancel.github.io/FlowerShop/",
 	},
 ];
 

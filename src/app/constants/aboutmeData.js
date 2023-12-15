@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const aboutMeData = [
 	{
 		title: "Skills",
@@ -19,7 +21,8 @@ const aboutMeData = [
 			<ul className="list-dist pl-2">
 				<li>Orange Foundation Python Course</li>
 				<li>Zrozumieć React</li>
-				<li>Frontend courses</li>
+				<li>Frontend Courses</li>
+				<Link href={"https://github.com/WojciechStancel/Certificates"} target="_blank">Link to Certificates</Link>
 			</ul>
 		),
 	},

@@ -1,11 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import MY_IMAGE from "../../../public/images/avatar_maker.png";
+import MY_IMAGE from "../../../public/images/avatar.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
+	const handleDownloadClick = () => {
+		const pdfPath = "/assets/CV_Wojciech_Stancel_eng.pdf";
+		const pdfUrl = new URL(pdfPath, window.location.origin);
+		const link = document.createElement("a");
+		link.href = pdfUrl.href;
+		link.download = "CV_Wojciech_Stancel_eng.pdf";
+		link.click();
+	};
 	return (
 		<section className="lg:py-16">
 			<div className="grid grid-cols-1 lg:grid-cols-12">
@@ -27,9 +35,9 @@ const HeroSection = () => {
 								1000, // wait 1s before replacing "Mice" with "Hamsters"
 								"Web Developer",
 								1000,
-								"Mobile Developer",
+								"Python Developer",
 								1000,
-								"UI/UX Designer",
+								"Future Fullstack",
 								1000,
 							]}
 							wrapper="span"
@@ -39,14 +47,15 @@ const HeroSection = () => {
 						/>
 					</h1>
 					<p className="text-[#ADB7BE] text-base  sm:text-lg lg:text-xl">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-						Laudantium, tempora.
+					Coding is not just about commands and algorithms - it's about expressing yourself in the language of machines to create something meaningful and impactful.
 					</p>
 					<div className="mt-5">
-						<button className="px-6 py-3 mb-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-300 via-blue-500 to-secondary-400  hover:bg-red-900 text-white">
-							Hire Me
+						<button className="px-6 py-3 mb-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-300 via-primary-500 to-secondary-400 hover:from-primary-400 hover:to-secondary-500 text-white">
+							<a href="#contact">Hire Me</a>
 						</button>
-						<button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-300 to-secondary-400 hover:bg-slate-800 text-white transition-colors duration-300 ">
+						<button
+							onClick={handleDownloadClick}
+							className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-300 to-secondary-400 hover:bg-slate-800 text-white transition-colors duration-300 ">
 							<span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 transition-colors duration-300">
 								Download CV
 							</span>

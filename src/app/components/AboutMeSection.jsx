@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
-import ABOUT_ME_IMG from "../../../public/images/notes_app.png";
+import ABOUT_ME_IMG from "../../../public/images/aboutme.jpg";
 import aboutMeData from "../constants/aboutmeData";
 import Image from "next/image";
 const AboutMeSection = () => {
@@ -17,20 +17,23 @@ const AboutMeSection = () => {
 
 	return (
 		<section className="text-white" id="about">
-			<div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+			<div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 				<Image
 					src={ABOUT_ME_IMG}
-					alt="computer monitors with programming tools"
-					width={500}
-					height={500}
+					alt="laptop with programming tools"
+					width={600}
+					height={400}
+					className="rounded-lg border border-[#33353F]"
 				/>
 				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
 					<h2 className="text-4xl font-bold mb-4">About Me</h2>
 					<p className="text-base md:text-lg">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-						corporis sapiente deleniti illum consequatur, nam sunt non omnis
-						similique quod?
+						Hi, I am Wojtek - frontend developer with aspiration to fullstack programmer from Poland. I am currently in the process of learning the
+						React framework. <br />
+						<br />
+						In addition to the frontend, I am also familiar with the workings of the backend. I have spent a lot of time to expand my knowledge of backend technologies such as Django, Databases and Django Rest Framework.
 					</p>
+
 					<div className="flex flex-row mt-7">
 						<TabButton
 							selectTab={() => handleTabChange("skills")}

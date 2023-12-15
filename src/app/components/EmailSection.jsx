@@ -38,23 +38,31 @@ const EmailSection = () => {
 	};
 
 	return (
-		<section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+		<section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4" id="contact">
 			<div>
 				<h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
 				<p className="text-[#ADB7BE] mb-4 max-w-md">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-					voluptatibus, nam commodi asperiores voluptas sapiente, vero veniam
-					cum delectus dolorem, tenetur quidem. Odio, recusandae pariatur.
+					There are links to my github, linkedin and instagram accounts where
+					you can check out my projects and find out more about me.
 				</p>
 
 				<div className="socials flex flex-row gap-2">
-					<Link href={"/"} className="hover:scale-125 transition-transform duration-300">
+					<Link
+						href={"https://github.com/WojciechStancel"}
+						target="_blank"
+						className="hover:scale-125 transition-transform duration-300">
 						<Image src={GITHUB_ICON} alt="Github icon" />
 					</Link>
-					<Link href={"/"} className="hover:scale-125 transition-transform duration-300">
+					<Link
+						href={"https://www.linkedin.com/in/wojciech-stancel"}
+						target="_blank"
+						className="hover:scale-125 transition-transform duration-300">
 						<Image src={LINKEDIN_ICON} alt="Linkedin icon" />
 					</Link>
-					<Link href={"/"} className="hover:scale-125 transition-transform duration-300">
+					<Link
+						href={"https://www.instagram.com/codecr8ive/"}
+						target="_blank"
+						className="hover:scale-125 transition-transform duration-300">
 						<Image src={INSTAGRAM_ICON} alt="Instagram icon" />
 					</Link>
 				</div>
@@ -69,7 +77,7 @@ const EmailSection = () => {
 						type="email"
 						id="email"
 						required
-						placeholder="example@example.com"
+						placeholder="your-email@example.com"
 						className="bg-[#ADB7BE] border border-primary-400 placeholder-[#0d0d0dc5] text-[#0b0b0b] text-sm rounded-lg block w-full p-2.5"
 					/>
 					<label

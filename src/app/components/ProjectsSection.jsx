@@ -45,14 +45,14 @@ const ProjectsSection = () => {
 				<p className="mt-4">There are no projects yet...</p>
 			) : (
 				<ul className="grid md:grid-cols-3 gap-8 md:gap-12 mt-2">
-					{filteredProject.map((project) => {
+					{filteredProject.map((project, index) => {
 						return (
 							<motion.li
-								key={project.id}
+								key={index}
 								variants={cardVariants}
 								initial="initial"
 								animate={isView ? "animate" : "initial"}
-								transition={{ duration: 0.3, delay: project.id * 0.4 }}>
+								transition={{ duration: 0.3, delay: index * 0.4 }}>
 								<ProjectCard
 									title={project.title}
 									description={project.description}
