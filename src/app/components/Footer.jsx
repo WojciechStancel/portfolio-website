@@ -6,7 +6,7 @@ const Footer = () => {
 
 	return (
 		<footer className="text-white border border-top-[#33353F] border-l-transparent border-r-transparent">
-			<div className="container mx-auto p-12 flex justify-around items-center">
+			<div className="container mx-auto p-12 flex flex-col gap-2 md:flex-row justify-around items-center">
 				<span className="flex items-center">
 					<Image
 						src={LOGO}
