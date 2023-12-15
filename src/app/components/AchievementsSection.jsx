@@ -12,7 +12,7 @@ const AnimatedNumbers = dynamic(
 const achievementsList = [
 	{
 		name: "Projects",
-		count: "100",
+		count: "10",
 		postfix: "+",
 	},
 	{
