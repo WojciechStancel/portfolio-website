@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
-import ABOUT_ME_IMG from "../../../public/images/notes_app.png";
+import ABOUT_ME_IMG from "../../../public/images/AboutMe.jpg";
 import aboutMeData from "../constants/aboutmeData";
 import Image from "next/image";
 const AboutMeSection = () => {
