@@ -49,9 +49,9 @@ const aboutMeData = [
 		id: "education",
 		content: (
 			<ul className="list-dist pl-2">
-				<li>- Orange Foundation Python Course - 12.2022 - 06.2023</li>
-				<li>- Zrozumieć React - 11.2023</li>
-				<li>- Frontend Courses - 12.2022 - now</li>
+				<li>* Orange Foundation Python Course - 12.2022 - 06.2023</li>
+				<li>* Zrozumieć React - 11.2023</li>
+				<li>* Frontend Courses - 12.2022 - now</li>
 				<Link
 					href={"https://github.com/WojciechStancel/Certificates"}
 					target="_blank"
@@ -66,8 +66,8 @@ const aboutMeData = [
 		id: "experience",
 		content: (
 			<ul className="list-dist pl-2">
-				<li>- Freelancing 10.2023 - now</li>
-				<li>- CodeCr8ive - website owner</li>
+				<li>* Freelancing 10.2023 - now</li>
+				<li>* CodeCr8ive - website owner</li>
 			</ul>
 		),
 	},
