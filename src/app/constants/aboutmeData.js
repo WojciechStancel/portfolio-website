@@ -5,28 +5,43 @@ const aboutMeData = [
 		title: "Skills",
 		id: "skills",
 		content: (
-			<ul className="list-dist pl-2">
-				<li className="flex">
-					<img src="/images/react.svg" width={20} className="mr-1" />
-					React
-				</li>
-				<li className="flex">
+			<table className="list-dist pl-2">
+				<tbody>
+				<tr className="flex">
+					<td>
+						<img src="/images/react.svg" width={20} className="mr-1" />
+					</td>
+					<td>React</td>
+				</tr>
+
+				<tr className="flex">
+					<td>
 					<img src="/images/javascript.svg" width={20} className="mr-1" />
-					JavaScript
-				</li>
-				<li className="flex">
+					</td>
+					<td>JavaScript</td>
+				</tr>
+
+				<tr className="flex">
+					<td>
 					<img src="/images/postgresql.svg" width={20} className="mr-1" />
-					PostgreSQL
-				</li>
-				<li className="flex">
-					<img src="/images/python.svg" width={20} className="mr-1" />
-					Python
-				</li>
-				<li className="flex">
-					<img src="/images/nodejs.svg" width={20} className="mr-1" />
-					Node.js
-				</li>
-			</ul>
+					</td>
+					<td>PostgreSql</td>
+				</tr>
+				<tr className="flex">
+					<td>
+						<img src="/images/python.svg" width={20} className="mr-1" />
+					</td>
+					<td>Python</td>
+				</tr>
+				<tr className="flex">
+					<td>
+						<img src="/images/nodejs.svg" width={20} className="mr-1" />
+					</td>
+					<td>Node.js</td>
+				</tr>
+				</tbody>
+
+			</table>
 		),
 	},
 	{
