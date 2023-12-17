@@ -13,6 +13,9 @@ const SelectPopupModal = ({ setPopupOpen }) => {
 			link.href = pdfUrl.href;
 			link.download = `CV_Wojciech_Stancel_${selectedLanguage}.pdf`;
 			link.click();
+			setTimeout(() => {
+				setPopupOpen(false)
+			}, 2000)
 		} else {
 			alert("You have to choose language version!");
 		}
