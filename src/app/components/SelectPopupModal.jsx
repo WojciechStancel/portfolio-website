@@ -31,7 +31,7 @@ const SelectPopupModal = ({ setPopupOpen }) => {
 					name="language"
 					className="mx-4 max-[350px]:px-1 px-5 py-2 text-base md:text-lg rounded-md bg-primary-400 border border-primary-400 cursor-pointer hover:bg-primary-500 transition-colors duration-300">
 					<option value="">Select CV language</option>
-					<option value="en">ENG</option>
+					<option value="eng">ENG</option>
 					<option value="pl">PL</option>
 				</select>
 				<button
