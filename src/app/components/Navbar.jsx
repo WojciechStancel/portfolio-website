@@ -67,7 +67,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
-			{navbarOpen && <MobileMenu />}
+			{navbarOpen && <MobileMenu setNavbarOpen={setNavbarOpen}/>}
 		</nav>
 	);
 };

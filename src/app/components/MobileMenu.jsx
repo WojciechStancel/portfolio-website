@@ -1,13 +1,13 @@
 import {navigationLinks} from "./Navbar";
 import NavLink from "./NavLink";
 
-const MobileMenu = () => {
+const MobileMenu = ({setNavbarOpen}) => {
 	return (
 		<ul className="flex flex-col py-5 items-center">
 			{navigationLinks.map((link) => {
 				return (
 					<li key={link.path}>
-						<NavLink href={link.path} title={link.title} />
+						<NavLink href={link.path} title={link.title} setNavbarOpen={setNavbarOpen} />
 					</li>
 				);
 			})}
