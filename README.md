@@ -5,12 +5,13 @@
 
 ## Main functions
 
-- styled with tailwind
-- responsiveness
-- posibility to download my CV in two languages - PL or ENG
-- used motion animations
-- used Image component to optimise photos
-- app deployed on Vercel
+- Styled with tailwind
+- Responsiveness
+- Posibility to download my CV in two languages - PL or ENG
+- Resend - the email API for developers.
+- Motion animations
+- Used Image component to optimise photos
+- App deployed on Vercel
   
 
 
