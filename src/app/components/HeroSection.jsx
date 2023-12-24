@@ -11,9 +11,8 @@ const HeroSection = () => {
 	const [popupOpen, setPopupOpen] = useState(false);
 
 	const handleOpenPopup = () => {
-		setPopupOpen(true)
-	}
-	
+		setPopupOpen(true);
+	};
 
 	return (
 		<section className="lg:py-16 relative">
@@ -53,9 +52,11 @@ const HeroSection = () => {
 						meaningful and impactful.
 					</p>
 					<div className="mt-5">
-						<button className="px-6 py-3 mb-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-300 via-primary-500 to-secondary-400 hover:from-primary-400 hover:to-secondary-500 text-white">
-							<a href="#contact">Hire Me</a>
-						</button>
+						<a href="#contact">
+							<button className="px-6 py-3 mb-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-300 via-primary-500 to-secondary-400 hover:from-primary-400 hover:to-secondary-500 text-white">
+								Hire Me
+							</button>
+						</a>
 						<button
 							onClick={handleOpenPopup}
 							className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-300 to-secondary-400 hover:bg-slate-800 text-white transition-colors duration-300 ">
