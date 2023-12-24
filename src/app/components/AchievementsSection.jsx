@@ -22,7 +22,7 @@ const achievementsList = [
 	},
 	{
 		name: "Contributions",
-		count: "430",
+		count: "500",
 		postfix: "+",
 	},
 ];

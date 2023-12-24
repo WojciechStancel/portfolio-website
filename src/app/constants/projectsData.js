@@ -1,8 +1,17 @@
 const projectData = [
 	{
+		title: "Memory Game",
+		description:
+			"It is a simple memory game build with Next.js. I still have a lot of ideas how to improve this project, so app will still be in development",
+		image: "/images/memory_game.png",
+		tag: ["All", "React"],
+		githubUrl: "https://github.com/WojciechStancel/Memo-Game",
+		previewUrl: "https://www.memorygame.site/",
+	},
+	{
 		title: "React E-Shop",
 		description:
-			"This is main project created during the course - Zrozumieć React. It is a Polish course that has been created by fantastic people - Filip and Kacper. The e-commerce project helped me understand a lot of React features and prepared me to build my own bigger applications. All data is stored in back-end folder.",
+			"This is the e-commerce project which helped me understand a lot of React features and prepared me to build bigger applications. All data is stored in back-end folder.",
 		image: "/images/e-shop.png",
 		tag: ["All", "React"],
 		githubUrl: "https://github.com/WojciechStancel/e-shop",
