@@ -25,6 +25,11 @@ export const navigationLinks = [
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
+
+	function handleNavbar() {
+		setNavbarOpen(!navbarOpen);
+	}
+
 	return (
 		<nav className="fixed mx-auto border-b border-[#33353F] top-0 left-0 right-0 z-20 bg-[#121212]">
 			<div className="flex flex-wrap items-center justify-between mx-auto p-3 md:p-4">
@@ -42,11 +47,11 @@ const Navbar = () => {
 				</Link>
 				<div className="mobile-menu block md:hidden">
 					{navbarOpen ? (
-						<button onClick={() => setNavbarOpen(false)} className="p-4">
+						<button onClick={handleNavbar} className="p-4">
 							<Image src={X_ICON} alt="close navigation" className="h-7 w-7" />
 						</button>
 					) : (
-						<button onClick={() => setNavbarOpen(true)} className="p-4">
+						<button onClick={handleNavbar} className="p-4">
 							<Image
 								src={BURGER_ICON}
 								alt="open navigation"
@@ -67,7 +72,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
-			{navbarOpen && <MobileMenu setNavbarOpen={setNavbarOpen}/>}
+			{navbarOpen && <MobileMenu handleNavbar={handleNavbar} />}
 		</nav>
 	);
 };
