@@ -48,7 +48,10 @@ const ProjectsSection = () => {
 	};
 
 	return (
-		<section className="text-white text-center" id="projects" ref={ref}>
+		<section
+			className="text-white text-center scroll-mt-24"
+			id="projects"
+			ref={ref}>
 			<h2 className="text-4xl font-bold mb-4 mt-4">My Projects</h2>
 			<div className="text-[#c3e2f3] flex flex-row flex-wrap justify-center items-center gap-2 py-6">
 				{projectsCategories.map((category) => {
