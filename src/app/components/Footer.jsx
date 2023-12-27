@@ -17,7 +17,7 @@ const Footer = () => {
 					/>
 					MyPortfolio{" "}
 				</span>
-				<span>{currentYear} </span>All rights reserved &#174;
+				<span>&copy;{currentYear} </span>All rights reserved.
 			</div>
 		</footer>
 	);
