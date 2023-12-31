@@ -2,7 +2,7 @@ import Image from "next/image";
 import LOGO from "../../../public/images/Logo.png";
 
 const Footer = () => {
-	const currentYear = new Date().getFullYear();
+	let currentYear = new Date().getFullYear();
 
 	return (
 		<footer className="text-white border border-top-[#33353F] border-l-transparent border-r-transparent">
