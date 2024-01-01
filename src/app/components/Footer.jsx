@@ -1,8 +1,15 @@
+"use client";
 import Image from "next/image";
 import LOGO from "../../../public/images/Logo.png";
+import { useState } from "react";
+
+function getYear() {
+	let currentYear = new Date().getFullYear();
+	return currentYear
+}
 
 const Footer = () => {
-	let currentYear = new Date().getFullYear();
+	const [actualYear,] = useState(getYear())
 
 	return (
 		<footer className="text-white border border-top-[#33353F] border-l-transparent border-r-transparent">
@@ -17,7 +24,7 @@ const Footer = () => {
 					/>
 					MyPortfolio{" "}
 				</span>
-				<span>&copy;{currentYear} </span>All rights reserved.
+				<span>&copy; {actualYear} </span>All rights reserved.
 			</div>
 		</footer>
 	);
