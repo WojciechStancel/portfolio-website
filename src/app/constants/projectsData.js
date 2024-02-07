@@ -1,5 +1,23 @@
 const projectData = [
 	{
+		title: "AZ Clean",
+		description:
+			"Website of a cleaning company operating in Warsaw and the surrounding area",
+		image: "/images/azclean.png",
+		tag: ["All", "Frontend"],
+		githubUrl: "#",
+		previewUrl: "https://azclean.com.pl/",
+	},
+	{
+		title: "Landing page",
+		description:
+			"Photography company landing page created with HTML, SCSS and JS",
+		image: "/images/kadrart.png",
+		tag: ["All", "Frontend"],
+		githubUrl: "https://github.com/WojciechStancel/LandingPage-Photo",
+		previewUrl: "https://wojciechstancel.github.io/LandingPage-Photo/",
+	},
+	{
 		title: "Memory Game",
 		description:
 			"It is a simple memory game build with Next.js. I still have a lot of ideas how to improve this project, so app will still be in development",
@@ -16,15 +34,6 @@ const projectData = [
 		tag: ["All", "React"],
 		githubUrl: "https://github.com/WojciechStancel/e-shop",
 		previewUrl: "/",
-	},
-	{
-		title: "Notes App",
-		description:
-			"Notes App is a simple application that lets you write down the things that are important to you. App is connected with Firebase Database - for now there is no authorization option. You can enjoy a personalized experience with the ability to switch between light and dark themes.",
-		image: "/images/notes_app.png",
-		tag: ["All", "React"],
-		githubUrl: "https://github.com/WojciechStancel/Notes-React-App",
-		previewUrl: "https://your-notes-react-app.netlify.app/",
 	},
 	{
 		title: "Real Estate",
@@ -61,6 +70,15 @@ const projectData = [
 		tag: ["All", "Frontend"],
 		githubUrl: "https://github.com/WojciechStancel/FlowerShop",
 		previewUrl: "https://wojciechstancel.github.io/FlowerShop/",
+	},
+	{
+		title: "Charcie Sprawy - Blog",
+		description:
+			"This is blog dedicated to greyhounds. It is under development using Wordpress.",
+		image: "/images/charciesprawy.png",
+		tag: ["All", "Wordpress"],
+		githubUrl: "#",
+		previewUrl: "https://charciesprawy.pl/",
 	},
 ];
 

@@ -4,14 +4,15 @@ import Image from "next/image";
 import MY_IMAGE from "../../../public/images/avatar1.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import SelectPopupModal from "./SelectPopupModal";
 
 const HeroSection = () => {
-	const [popupOpen, setPopupOpen] = useState(false);
-
-	const handleOpenPopup = () => {
-		setPopupOpen(true);
+	const handleDownload = () => {
+		const pdfPath = `/assets/CV_Wojciech_Stancel_eng.pdf`;
+		const pdfUrl = new URL(pdfPath, window.location.origin);
+		const link = document.createElement("a");
+		link.href = pdfUrl.href;
+		link.download = `CV_Wojciech_Stancel_eng.pdf`;
+		link.click();
 	};
 
 	return (
@@ -58,7 +59,7 @@ const HeroSection = () => {
 							</button>
 						</a>
 						<button
-							onClick={handleOpenPopup}
+							onClick={handleDownload}
 							className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-300 to-secondary-400 hover:bg-slate-800 text-white transition-colors duration-300 ">
 							<span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 transition-colors duration-300">
 								Download CV
@@ -83,7 +84,6 @@ const HeroSection = () => {
 					</div>
 				</motion.div>
 			</div>
-			{popupOpen && <SelectPopupModal setPopupOpen={setPopupOpen} />}
 		</section>
 	);
 };
